@@ -5,7 +5,7 @@ export function manageFriends(state, action){
       break;
     case 'REMOVE_FRIEND':
       //var friendID = state.friends.findIndex(element => element.id === action.id)
-      return {friends: state.friends(element => element.id !== action.id)}
+      return {friends: state.friends.filter(element => element.id !== action.id)}
       break;
     default:
       return state;
