@@ -6,7 +6,7 @@ export function manageFriends(state, action){
     case 'REMOVE_FRIEND':
       var friendID = state.friends.findIndex(element => element.id === action.id)
       console.log(friendID)
-      return {friends: state.friends.splice(friendID, 1)}
+      return {friends: state.friends.slice(friendID, friendID+1)}
       break;
     default:
       return state;
