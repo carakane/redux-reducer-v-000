@@ -7,7 +7,7 @@ export function manageFriends(state, action){
       var friendID = state.friends.findIndex(element => element.id === action.id)
       let newState = state.friends
       console.log(friendID)
-      return {friends: newState.friends.splice(friendID, 1)}
+      return {friends: newState.splice(friendID, 1)}
       break;
     default:
       return state;
