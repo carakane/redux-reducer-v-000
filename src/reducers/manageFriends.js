@@ -5,6 +5,6 @@ export function manageFriends(state, action){
     case 'REMOVE_FRIEND':
       return {friends: this.state.friends.shift[action.id]}
     default:
-      return state.friends;
+      return state;
   }
 }
