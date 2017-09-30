@@ -4,7 +4,7 @@ export function manageFriends(state, action){
       return {friends: [...state.friends, action.friend] };
       break;
     case 'REMOVE_FRIEND':
-      return {friends: state.friends.shift[action.id]}
+      return {friends: state.friends.splice[action.id, 1]}
       break;
     default:
       return state;
